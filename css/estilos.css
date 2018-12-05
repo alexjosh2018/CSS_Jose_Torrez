@@ -1,0 +1,121 @@
+body{
+    background-color:  #02010a;
+    font-family: 'Dancing Script';
+}
+.encabezado{
+    background-color: #5b7989;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    display:flex; 
+    flex-direction:row;  
+    align-items: center;
+}
+.comenzando{
+    text-shadow: 2px 2px #02010a;
+    padding-left: 1%;
+    flex: 1;   
+}
+.navegador{
+    flex: 1;
+    text-align: right;
+    padding: 1%;
+}
+#menu-principal a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2%;
+}
+.contenedor{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#imagen1{
+    background-color: #82c3a6;
+    text-align: center;
+}
+#imagen-secundaria{
+    background-color: #d5c75f;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagen1{
+    width: 100%;
+}
+#imagen2, #imagen3{
+    width: 50%;
+}
+#imagen1 img{
+    width: 60%;
+    margin: 1%;
+    border: 1px black solid;
+}
+#imagen2 img{
+    width: 60%;
+    border: 1px black solid;
+}
+
+#imagen2 img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6 ;
+}
+
+#imagen3 img:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px #82c3a6 ;
+    border: 2px;
+}
+#imagen3 img{
+    width: 70%;
+    border: 1px black solid;
+}
+
+footer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.pie-pagina{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+   /* -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;*/
+    background-color:  #C6d5c5;
+  /*  align-items: baseline;*/
+}
+
+.contacto, .terminos, .derechos, .redes {
+    width: 24%;
+    text-align: left;
+    padding-left: 1%;
+}
+/*
+.redes{
+    display: flex;
+    flex-direction: column;
+    background-color: #d5c75f;
+   align-content: flex-start;
+}*/
+.redes ul{
+    list-style-type: none;
+    padding: 0.2%;
+}
+
+#c1,#c2,#c3 {
+    padding-top: 5%;
+}
+.redes ul img{
+    float: left;
+    text-align: left;
+    width: 20px;
+}
