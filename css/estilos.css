@@ -11,6 +11,21 @@ body{
     flex-direction:row;  
     align-items: center;
 }
+
+.navegador ul{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+    list-style-type: none;
+    
+}
+.navegador li{
+    display: inline;
+    padding-right: 5px;
+    text-decoration: none;
+}
 .comenzando{
     text-shadow: 2px 2px #02010a;
     padding-left: 1%;
@@ -21,8 +36,8 @@ body{
     text-align: right;
     padding: 1%;
 }
+
 #menu-principal a{
-    text-decoration: none;
     color: white;
     padding-left: 2%;
 }
@@ -88,6 +103,7 @@ footer{
     font-size: 0.9em;
     display: flex;
     flex-direction: row;
+    border-radius: 0px 0px 10px 10px;
    /* -webkit-flex-flow: row wrap;
     flex-flow: row wrap;*/
     background-color:  #C6d5c5;
@@ -109,6 +125,7 @@ footer{
 .redes ul{
     list-style-type: none;
     padding: 0.2%;
+  
 }
 
 #c1,#c2,#c3 {
