@@ -10,6 +10,19 @@ body{
     display:flex; 
     flex-direction:row;  
     align-items: center;
+    animation: animacion-pagina 1s;
+}
+
+@-webkit-keyframes animacion-pagina{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
 }
 
 .navegador ul{
@@ -26,13 +39,6 @@ body{
     padding-right: 5px; 
 }
 
-#menu-principal li a:hover{
-    text-decoration: underline;
-}
-.navegador li a:hover{
-    text-decoration: underline;
-
-}
 .comenzando{
     text-shadow: 2px 2px #02010a;
     padding-left: 1%;
@@ -64,14 +70,6 @@ body{
     text-align: center;
 }
 #imagen-secundaria{
-    background-color: #d5c75f;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#imagen-secundaria2{
     padding-top: 2%;
     padding-bottom : 2%;
     background-color: #d5c75f;
@@ -83,29 +81,48 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+/*
+#imagen-secundaria2{
+    padding-top: 1%;
+    padding-bottom : 1%;
+    background-color: #d5c75f;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+*/
 #imagen1{
+    padding-top: 1%;
+    padding-bottom : 1%;
     width: 100%;
 }
 #imagen2, #imagen3{
+  
     width: 50%;
 }
 
 #imagen4-1,#imagen5-2,#imagen6-3,#imagen7-4,#imagen8-5,#imagen9-6{
-    margin-top : 1%;
-    margin-bottom : 1%;
-    width: 33.33%;
-    
+    margin-top : 0.5%;
+    margin-bottom : 0.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 33.33%; 
 }
 
 #imagen1 img{
     width: 60%;
     margin: 1%;
     border: 1px black solid;
+    box-shadow: 2px 2px #02010a;
 }
 #imagen2 img{
-    width: 60%;
+    width: 70%;
     border: 1px black solid;
+    box-shadow: 2px 2px #02010a;
 }
 
 #imagen2 img:hover{
@@ -121,29 +138,35 @@ body{
 #imagen3 img{
     width: 70%;
     border: 1px black solid;
+    box-shadow: 2px 2px #02010a;
 }
 
 #imagen4-1 img{
     width: 70%;
     border: 1px black solid;
     filter: blur(10px);
+    box-shadow: 2px 2px #02010a;
 }
 
 #imagen6-3 img{
     width: 70%;
     border: 1px black solid;
     filter: sepia(90%);
+    box-shadow: 2px 2px #02010a;
 }
 #imagen5-2 img,#imagen7-4 img,#imagen9-6 img{
     width: 70%;
     border: 1px black solid;
     filter: grayscale(100%);
+    box-shadow: 2px 2px #02010a;
 }
 
 #imagen8-5 img{
     width: 70%;
     border: 1px black solid;
+    box-shadow: 2px 2px #02010a;
 }
+
 
 footer{
     padding-left: 10%;
@@ -153,16 +176,16 @@ footer{
 .pie-pagina{
     font-size: 0.9em;
     display: flex;
-    flex-direction: row;
+    flex-grow: 1;
     border-radius: 0px 0px 10px 10px;
-   /* -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;*/
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     background-color:  #C6d5c5;
-  /*  align-items: baseline;*/
+    align-items: baseline;
 }
 
 .contacto, .terminos, .derechos, .redes {
-    width: 24%;
+    width: 23.5%;
     text-align: left;
     padding-left: 1.5%;
 }
@@ -180,3 +203,49 @@ footer{
     text-align: left;
     width: 20px;
 }
+
+@media (max-width:900px){
+  
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        /*-webkit-flex-flow: row wrap;
+        flex-flow: row wrap;*/
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .comenzando,.navegador{
+        text-align: center;
+    }
+
+    .contenedor{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    footer{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+            
+    #imagen4-1,#imagen5-2,#imagen6-3,#imagen7-4,#imagen8-5,#imagen9-6{
+        margin-top : 2%;
+        margin-bottom : 2%;
+        width: 100%;  
+    }
+
+    #imagen2 img, #imagen3 img{
+        width: 80%;
+    }
+
+    #imagen1,#imagen2,#imagen3{
+        padding-top : 2%;
+        padding-bottom : 2%;
+        width: 100%;
+    }
+
+    .contacto, .terminos, .derechos, .redes {
+        width: 100%;
+    }
+    }
